@@ -1,5 +1,4 @@
 import { BsShieldLockFill } from "react-icons/bs";
-import { FaRegUserCircle } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -12,11 +11,13 @@ const Navbar = () => {
             </div>
             
             <div className="flex items-center justify-center gap-4 text-white">
-              <div className="hidden sm:flex">
-                <FaRegUserCircle size={25}/>
-              </div>
-              <button className="relative bottom-5 sm:static sm:flex-shrink-0 text-gray-800 font-medium bg-slate-300 border-0 py-1 px-4 focus:outline-none hover:bg-slate-600 hover:text-gray-200 rounded text-sm mt-10 sm:mt-0">Sign In</button>
+              <a href="https://github.com/BlockbusterAndy/PassKeep-Password-Manager-React" target="_blank">
+                <button className="text-gray-800 flex items-center gap-1 bg-lime-400 py-2 px-4 rounded-full font-medium">
+                  <img src="./github.svg" alt="Github Logo" width={25} /> GitHub 
+                </button>
+              </a>
             </div>
+
         </div>
     </nav>
   )

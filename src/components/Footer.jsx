@@ -12,11 +12,7 @@ const Footer = () => {
           Made with ❤️ by 
           <a href="https://linktr.ee/blockbusterandy" target="_blank" className="font-semibold">@blockbusterandy</a>
         </p>
-        <a href="https://github.com/BlockbusterAndy/PassKeep-Password-Manager-React" target="_blank">
-          <button className="text-gray-800 flex items-center gap-1 bg-lime-400 py-2 px-4 rounded-full font-medium">
-            <img src="./github.svg" alt="Github Logo" width={25} /> GitHub 
-          </button>
-        </a>
+       
       </div>
     </footer>
   );
