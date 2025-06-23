@@ -1,3 +1,72 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* Custom CSS for consistent theming */
+:root {
+  --toastify-color-light: hsl(var(--b1));
+  --toastify-color-dark: hsl(var(--b1));
+  --toastify-text-color-light: hsl(var(--bc));
+  --toastify-text-color-dark: hsl(var(--bc));
+}
+
+/* Enhanced Toast Styling */
+.Toastify__toast {
+  background: hsl(var(--b1));
+  color: hsl(var(--bc));
+  border: 1px solid hsl(var(--b3));
+  border-radius: 0.75rem;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  font-weight: 500;
+}
+
+.Toastify__toast--success {
+  background: hsl(var(--su));
+  color: hsl(var(--suc));
+  border-color: hsl(var(--su));
+}
+
+.Toastify__toast--error {
+  background: hsl(var(--er));
+  color: hsl(var(--erc));
+  border-color: hsl(var(--er));
+}
+
+.Toastify__toast--info {
+  background: hsl(var(--in));
+  color: hsl(var(--inc));
+  border-color: hsl(var(--in));
+}
+
+.Toastify__toast--warning {
+  background: hsl(var(--wa));
+  color: hsl(var(--wac));
+  border-color: hsl(var(--wa));
+}
+
+.Toastify__progress-bar {
+  background: linear-gradient(90deg, hsl(var(--p)), hsl(var(--s)));
+}
+
+/* Custom Animations */
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.hero {
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.3), transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(120, 119, 198, 0.3), transparent 50%),
+    radial-gradient(circle at 40% 80%, rgba(120, 119, 198, 0.3), transparent 50%);
+}
+
+.Toastify__toast--error {
+  background: hsl(var(--er));
+  color: hsl(var(--erc));
+}
